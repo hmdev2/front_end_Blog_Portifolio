@@ -16,7 +16,7 @@ import { AuthProvider } from './contexts/AuthContext';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <AuthProvider>
-    <Router basename='/front_end_Blog_Portifolio'>
+    <Router>
       <Header />
       <Routes>
         <Route path='/' element={<Home />} />

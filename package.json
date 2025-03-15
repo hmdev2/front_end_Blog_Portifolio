@@ -2,7 +2,7 @@
   "name": "blog",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://hmdev2.github.io/front_end_Blog_Portifolio",
+  "homepage": ".",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.7.2",
     "@fortawesome/free-brands-svg-icons": "^6.7.2",
