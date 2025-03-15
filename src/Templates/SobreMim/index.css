@@ -1,0 +1,117 @@
+.sobreSection {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: #16161a;
+    color: whitesmoke;
+}
+
+.sobreContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 80%;
+    margin: 0 2rem;
+    margin-top: 3rem;
+}
+
+.imageContent {
+    display: flex;
+    height: auto;
+    min-width: 25rem;
+}
+
+.imageContent img {
+    height: auto;
+    width: 100%;
+    border-radius: 20px 0 0 20px;
+}
+
+.sobreText {
+    display: flex;
+    flex-direction: column;
+    padding: 0 2rem;
+    height: 100%;
+    gap: 2rem;
+}
+
+.sobreText h1 {
+    font-size: 5rem;
+}
+
+.sobreText p {
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.sobreText .buttonsContent {
+ width: 100%;   
+ display: flex;
+ justify-content: end;
+ align-items: center;
+ margin-top: auto;
+ margin-bottom: 0.5rem;
+ gap: 1rem;
+}
+
+.sobreText .buttonsContent * {
+    cursor: pointer;
+    height: auto;
+    width: 2rem;
+    color: whitesmoke;
+}
+
+@media (max-width: 480px) {
+
+    .sobreSection {
+        overflow: hidden;
+    }
+    .sobreContent {
+        flex-direction: column;
+        position: relative;
+        height: 90%;
+        justify-content: normal;
+        margin: 0 0rem;
+        margin-top: 2rem;
+    }
+    
+    .imageContent {
+        border-radius: 50%;
+        overflow: hidden;
+        width: 15rem;
+        height: 15rem;
+        position: absolute;
+        top: 10px;
+        background-image: url(https://images.pexels.com/photos/3201583/pexels-photo-3201583.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+        background-position: center;
+        background-size: cover;
+        min-width: 0px;
+    }
+
+    .imageContent img {
+        display: none;
+        height: auto;
+        width: 9%;
+    }
+    
+    .sobreText {
+        position: relative;
+        max-height: 60%;
+        margin-top: auto;
+        gap: 0.5rem;
+    }
+
+    .sobreText p {
+        font-size: 1rem;
+        font-weight: 300;
+    }
+
+    .sobreText h1 {
+        font-size: 3rem;
+    }
+}

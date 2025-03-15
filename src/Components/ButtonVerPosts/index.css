@@ -1,0 +1,28 @@
+.buttonDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    bottom: 3rem;
+}
+
+.buttonDiv a {
+    background-color: #7f5af0;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 0.8rem 1rem;
+    font-weight: 600;
+    font-size: large;
+    box-shadow: 0px 5px 10px 5px rgba(75, 15, 172, 0.6);
+    transition: box-shadow 1s ease, transform 1s ease;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.buttonDiv a:hover {
+    transform: translate(0px, -10px);
+    box-shadow: 0px 5px 8px 7px rgba(75, 15, 172, 0.8);
+
+}

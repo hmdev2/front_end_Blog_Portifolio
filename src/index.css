@@ -1,0 +1,16 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#root, body, html {
+    height: 100dvh;
+    width: 100%;
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+     font-weight: weight;
+    font-style: normal;
+    background-color: whitesmoke;
+}
+
+  

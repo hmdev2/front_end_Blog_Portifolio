@@ -1,0 +1,228 @@
+.sectionProjectPage {
+    height: 100.vh;
+    width: 100%;
+    padding: 50px 0px;
+    display: flex;
+    justify-content: center;
+    background-color: whitesmoke;
+    padding-top: 5rem;
+
+}
+
+.projectPageContent {
+    width: 100%;
+    height: auto;
+    margin: 0px 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    box-shadow: 0px 10px 30px 8px rgba( 0, 0, 0, 0.2);
+    background-color: rgba( 252, 252, 252, 0.8);
+    padding: 50px;
+    padding-bottom: 0px;
+}
+
+.inframeContent {
+    width: 100%;
+    height: 35rem;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 20px;
+    margin-bottom: 50px;
+    box-shadow: 0px 10px 20px 8px rgba( 0, 0, 0, 0.2);
+}
+
+.prevSiteLabel {
+    color: rgba(184, 183, 183, 0.6);
+    margin-bottom: 10px;
+    width: 98%;
+}
+
+.textContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.textContainer blockquote {
+    margin-bottom: 20px;
+    padding-left: 20px;
+    border-left: 2px solid rgba( 0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+}
+
+.textContainer blockquote p {
+    margin: 10px 0px;
+}
+
+.textContainer pre {
+    border: 1px solid;
+    border-radius: 10px;
+    padding: 10px;
+    width: 80%;
+    align-self: center;
+    margin-bottom: 40px !important;
+    border: none;
+    background-color: rgb(8, 11, 39, 0.9) !important;
+    box-shadow: 0px 10px 30px 8px rgba( 0, 0, 0, 0.4);
+}
+
+.textContainer a {
+    text-decoration: none;
+    color: rgb(49, 49, 218);
+    margin-bottom: 20px;
+    transition: font-weight 0.5s ease, color 0.5s ease;
+}
+
+.textContainer a:hover {
+    font-weight: 600;
+    color: rgb(137, 63, 255);
+}
+
+.textContainer a:active {
+    font-weight: 200;
+}
+
+.textContainer p:has(img) {
+    align-self: center;
+    margin: 0px !important;
+    padding: 0px !important;
+}
+
+.textContainer img {
+    border-radius: 20px;
+    width: 100%;
+    align-self: center;
+    height: auto;
+    margin: 30px 0px 40px 0px;
+    box-shadow: 0px 10px 30px 8px rgba( 0, 0, 0, 0.4);
+}
+
+.textContainer h2 {
+    margin-bottom: 10px;
+}
+
+.textContainer p {
+    margin-bottom: 20px;
+}
+
+.textContainer ul {
+ list-style: none inside;
+ margin-bottom: 25px;
+}
+
+.textContainer ol {
+    list-style: decimal inside;
+    margin-bottom: 25px;
+}
+
+.textContainer li {
+    margin-left: 15px;
+    margin-bottom: 5px;
+    font-size: large;
+}
+
+.textContainer li ul li {
+    margin-bottom: 0px;
+}
+
+.textContainer li ol li {
+    margin-bottom: 0px;
+}
+
+.projectPageContent hr {
+    margin: 20px 0px 40px 0px;
+}
+
+.projectPageContent h1 {
+    font-size: xx-large;
+    margin-bottom: 40px;
+}
+
+.projectPageContent p {
+    font-size: 20px;
+}
+
+.projectPageContent .links {
+    width: 100%;
+    margin-top: 10px;
+    height: 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 20px;
+}
+
+.projectPageContent .links a {
+    cursor: pointer;
+    width: 3rem;
+    height: auto;
+    transition: width 0.5s ease;
+}
+
+.projectPageContent .links a:hover {
+    width: 3.5rem;
+}
+
+.projectPageContent .links .fontAwesomeIcon {
+    width: 100%;
+    height: 100%;
+    color: black;
+}
+
+.imageContainer { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 20px;
+    margin-bottom: 50px;
+}
+
+.imageContainer img {
+  width: 100%;
+  max-height: 35rem;    
+}
+
+.siteWindow {
+    border: none;
+}
+
+@media (max-width: 480px) {
+    .sectionProjectPage {
+        overflow: hidden;
+    }
+
+    .projectPageContent {
+        margin-right: 0px !important;
+        margin-left: 0px !important;
+        padding: 50px 0px;
+        max-width: 480px;
+        
+    }
+
+    .textContainer * {
+        margin-left: 10px;
+    }
+
+    .textContainer p:has(img) {
+        display: flex;
+        align-self: center;
+        margin: 0px !important;
+        padding: 0px !important;
+    }
+
+    .projectPageContent .links {
+        display: flex;
+        align-items: center;
+        justify-content: center !important;
+    }
+
+    .inframeContent {
+        height: 30rem !important;
+    }
+}
