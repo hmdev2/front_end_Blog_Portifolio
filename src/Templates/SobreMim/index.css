@@ -72,6 +72,16 @@
     padding-top: 2rem;
 }
 
+
+@media (min-width: 1920px) {
+    .sobreText {
+        width: 100%;
+    }
+    .sobreText p {
+        font-size: 2rem;
+    }
+}
+
 @media (max-width: 480px) {
 
     .sobreSection {
@@ -125,5 +135,83 @@
         width: 20rem;
         padding-top: 0.5rem;
         margin-bottom: 0.5rem;
+    }
+}
+
+@media (width: 1024px) {
+    .sobreSection {
+        height: 100% !important;
+    }
+}
+
+@media (height: 1368px) {
+    .sobreSection {
+        height: 100% !important;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 1024px) {
+    
+    .sobreSection {
+        height: auto;
+        padding-top: 4rem;
+        padding-bottom: 1rem;
+    }
+    .sobreContent {
+        flex-direction: column;
+        position: relative;
+        height: auto;
+        justify-content: normal;
+        margin: 0 0rem;
+        margin-top: 2rem;
+    }
+    
+    .imageContent {
+        border-radius: 50%;
+        overflow: hidden;
+        width: 30rem;
+        height: 30rem;
+        position: absolute;
+        top: 40px;
+        background-image: url(https://res.cloudinary.com/da94vyxhf/image/upload/v1742141519/Pedro_Melo_Photo.png);
+        background-position: center;
+        background-size: cover;
+        min-width: 0px;
+    }
+
+    .imageContent img {
+        display: none;
+        height: auto;
+        width: 9%;
+    }
+    
+    .sobreText {
+        position: relative;
+        max-height: 60%;
+        margin-top: 28rem;
+        gap: 0.5rem;
+    }
+
+    .sobreText p {
+        font-size: 2rem;
+        font-weight: 300;
+    }
+
+    .sobreText h1 {
+        font-size: 3rem;
+    }
+
+    .sobreText .logoSobre {
+        align-self: center;
+    }
+
+    .sobreText .logoSobre * {
+        width: 40rem;
+        padding-top:7rem;
+        margin-bottom: 2rem;
+    }
+
+    .sobreText .buttonsContent * {
+        width: 4rem;
     }
 }

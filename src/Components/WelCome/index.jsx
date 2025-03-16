@@ -6,7 +6,7 @@ export const WelCome = () => {
     return (
         <section className="topHome">
             <div className="siteWelCome">
-                <div>
+                <div className='textWelcome'>
                     <p>Aqui você encontra meus projetos e experimentos</p>
                     <span>Pedro Melo</span>
                 </div>

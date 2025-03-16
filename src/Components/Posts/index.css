@@ -107,3 +107,20 @@
         margin: 30px 20px;
     }
 }
+
+@media (max-width: 1024px) {
+
+    .PostContainer {
+        flex-direction: column-reverse;
+        padding-left: 0px;
+        max-height: 100%;
+    }
+    .postImage {
+        margin-left: 0px;
+        max-width: 100%;
+    }
+
+    .PostContainer .postContent {
+        margin: 30px 20px;
+    }
+}
