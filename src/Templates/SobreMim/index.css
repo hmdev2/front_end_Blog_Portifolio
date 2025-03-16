@@ -66,6 +66,12 @@
     color: whitesmoke;
 }
 
+.sobreText .logoSobre * {
+    height: auto;
+    width: 30rem;
+    padding-top: 2rem;
+}
+
 @media (max-width: 480px) {
 
     .sobreSection {
@@ -113,5 +119,9 @@
 
     .sobreText h1 {
         font-size: 3rem;
+    }
+
+    .sobreText .logoSobre * {
+        padding-top: 0rem;
     }
 }

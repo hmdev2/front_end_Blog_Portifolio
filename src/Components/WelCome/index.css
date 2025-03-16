@@ -41,7 +41,8 @@ html {
     margin-top: 5px;
     padding: 20px 40px;
     background-color: rgba(127, 90, 240, 0.5);
-    background-image: url(https://images.pexels.com/photos/7736101/pexels-photo-7736101.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-image: url(https://res.cloudinary.com/da94vyxhf/image/upload/v1742142600/background_website_welcome_geaiox.jpg);
+    background-size: contain;
     animation: desappear ease;
     animation-timeline: view();
     animation-range: entry 120% cover 105%;

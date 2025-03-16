@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import "./index.css";
 import { useAuth } from "../../contexts/AuthContext";
+import CloudAdvancedImage from "../CloudAdvancedImage";
 
 
 export const Header = () => {
@@ -8,6 +9,9 @@ export const Header = () => {
 
     return (
         <header>
+            <div className="logo">
+                <CloudAdvancedImage imageName={"iconeLogo_kbr7g4"}/> 
+            </div>
             <Link className="Link" to={"/"}>Home</Link>
             <Link className="Link" to={"/sobre"}>Sobre</Link>
             {
