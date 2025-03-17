@@ -21,9 +21,8 @@ function Home() {
     fetchData();
   }, []);
 
-  const handleClick = (name, id) => {
-    const nameFormat = name.replaceAll(" ", "");
-    navigate(`/postPage/${nameFormat}`, {state: { postId: id}});
+  const handleClick = (id) => {
+    navigate(`/postPage/${id}`);
   };
 
   const handleDelete = (postId) => {
@@ -67,7 +66,7 @@ function Home() {
               postUrlSite={post.urlSite}
               postSitePrev={post.sitePrev}
               onDelete={handleDelete}
-              onClick={() => handleClick(post.title, post._id)}
+              onClick={() => handleClick(post._id)}
             />
         ))
       ) : (
