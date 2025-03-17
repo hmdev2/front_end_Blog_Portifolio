@@ -10,6 +10,10 @@ function Home() {
   const navigate = useNavigate();
 
   useEffect(() => {
+    window.history.scrollRestoration = 'manual';
+  }, []);
+
+  useEffect(() => {
     const fetchData = async() => {
       await fetch("https://blog-portifolio.onrender.com")
       .then((response) => response.json())
@@ -21,8 +25,9 @@ function Home() {
     fetchData();
   }, []);
 
-  const handleClick = (id) => {
-    navigate(`/postPage/${id}`);
+  const handleClick = (name, id) => {
+    const nameFormat = name.replaceAll(" ", "");
+    navigate(`/postPage/${nameFormat}`, {state: { postId: id}});
   };
 
   const handleDelete = (postId) => {
@@ -56,6 +61,7 @@ function Home() {
        {posts.length > 0 ? (
           posts.map((post) => (
             <Post
+              htmlId={post._id}
               key={post._id}
               postTitle={post.title}
               postAllDescription={post.description}
@@ -66,7 +72,7 @@ function Home() {
               postUrlSite={post.urlSite}
               postSitePrev={post.sitePrev}
               onDelete={handleDelete}
-              onClick={() => handleClick(post._id)}
+              onClick={() => handleClick(post.title, post._id)}
             />
         ))
       ) : (

@@ -1,3 +1,4 @@
+import { useLocation} from 'react-router-dom';
 import './index.css';
 import { useEffect, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -9,11 +10,11 @@ import ReactMarkdown from 'react-markdown';
 import Prism from 'prismjs';
 import 'prismjs/themes/prism-tomorrow.css';
 import 'prismjs/components/prism-javascript.min.js';
-import { useParams } from 'react-router-dom';
 
 
 export const ProjectPage = () => {
-    const { id } = useParams();
+    const location = useLocation();
+    const id = location.state.postId;
     const [postInfo, setPostInfo] = useState([]);
 
     useEffect(() => {

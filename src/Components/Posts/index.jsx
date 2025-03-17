@@ -14,7 +14,8 @@ export const Post = ({
     onClick, 
     postId, 
     onDelete, 
-    postAllDescription
+    postAllDescription,
+    htmlId
 }) => {
     const {
         isLoggedIn, setIsEditing,
@@ -68,7 +69,7 @@ export const Post = ({
     }
     
     return(
-        <div className="PostContainer" onClick={onClick}>
+        <div className="PostContainer" id={htmlId} onClick={onClick}>
             <div className="postContent">
                 <h1>{postTitle}</h1>
                 <ReactMarkdown>{postDescription}</ReactMarkdown>
