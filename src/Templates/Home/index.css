@@ -22,6 +22,7 @@
     background-color: whitesmoke;
     background-position: center;
     background-attachment: fixed;
+    background-size: cover;
 }
 
 .block {
@@ -40,15 +41,8 @@
     flex-direction: column;
 }
 
-@media (min-width: 600px) and (max-width: 1024px) {
-    .Home {
-        background-size: cover;
-    }
-}
-
 @media (min-width: 1920px) {
     .Home {
         width: auto;
-        background-size: cover;
     }
 }
