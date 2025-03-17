@@ -85,11 +85,12 @@
 @media (max-width: 480px) {
 
     .sobreSection {
-        overflow: hidden;
+        height: 100%;
     }
     .sobreContent {
+        overflow: auto;
         flex-direction: column;
-        position: relative;
+        position: absolute;
         height: 90%;
         justify-content: normal;
         margin: 0 0rem;
@@ -101,7 +102,7 @@
         overflow: hidden;
         width: 15rem;
         height: 15rem;
-        position: absolute;
+        position: relative;
         top: 10px;
         background-image: url(https://res.cloudinary.com/da94vyxhf/image/upload/v1742141519/Pedro_Melo_Photo.png);
         background-position: center;
