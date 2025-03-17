@@ -17,7 +17,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-image: url(https://media-public.canva.com/lruUs/MAEvmflruUs/1/s2.jpg);
+    background-image: url(https://res.cloudinary.com/da94vyxhf/image/upload/v1742239016/background_home_yxep0g.jpg);
     background-repeat: no-repeat;
     background-color: whitesmoke;
     background-position: center;
@@ -46,3 +46,9 @@
     }
 }
 
+@media (min-width: 1920px) {
+    .Home {
+        width: auto;
+        background-size: cover;
+    }
+}

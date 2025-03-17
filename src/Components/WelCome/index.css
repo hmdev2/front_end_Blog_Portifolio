@@ -71,3 +71,17 @@
         flex-direction: column;
     }
 }
+
+@media (min-width: 1920px) {
+    .siteWelCome  {
+        min-height: 45rem;
+    }
+
+    .textWelcome p {
+        font-size: 3rem;
+    }
+
+    .textWelcome span {
+        font-size: 1.5rem;
+    }
+}

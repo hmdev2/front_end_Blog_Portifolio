@@ -124,3 +124,27 @@
         margin: 30px 20px;
     }
 }
+
+
+@media (min-width: 1920px) {
+    .PostContainer {
+        min-height: 400px;
+        max-height: 400px;
+        width: 100%;
+        max-width: 1200px;
+    }
+
+    .postImage{
+        min-width: 400px;
+        max-width: 400px;
+        height: 400px;
+    }
+
+    .PostContainer h1 {
+        font-size: 2.5rem;
+    }
+
+    .PostContainer p {
+        font-size: 1.5rem;
+    }
+}

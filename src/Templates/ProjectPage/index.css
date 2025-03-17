@@ -228,15 +228,52 @@
 
 @media (min-width: 600px) and (max-width: 1024px) {
 
-    .sectionProjectPage {
-
-    }
-
     .projectPageContent {
         margin-top: 3rem;
         margin-right: 0px !important;
         margin-left: 0px !important;
         padding: 50px 30px;
+    }
+
+    .projectPageContent h1 {
+        font-size: 3.5rem;
+    }
+
+    .projectPageContent h2 {
+        font-size: 2.5rem;
+    }
+
+    .projectPageContent h3 {
+        font-size: 2.3rem;
+    }
+
+    .projectPageContent p {
+        font-size: 2rem;
+    }
+
+    .textContainer li {
+        font-size: 1.6rem;
+    }
+
+    .textContainer pre {
+        width: 90%;
+        padding: 30px !important;
+    }
+
+    .textContainer pre code {
+        font-size: 1.5rem;
+        
+    }
+    .textContainer pre code * {
+        font-size: 1.5rem;
+    }
+}
+
+
+@media (min-width: 1920px) {
+
+    .inframeContent {
+        height: 45rem;
     }
 
     .projectPageContent h1 {
